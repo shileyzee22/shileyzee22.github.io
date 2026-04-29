@@ -1,197 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Data Analysis Portfolio</title>
+    <title>Your Name | Data Science Portfolio</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon-32x32.png">
     <link rel="apple-touch-icon" href="/favicon-32x32.png">
 
-    <!-- Google Fonts for Elegant Typography -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
 
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <!-- Stylesheet -->
     <style>
-        body {
-            font-family: 'Lato', sans-serif;
-            background-color: #f4f4f9;
+        /* General Reset */
+        * {
             margin: 0;
             padding: 0;
-            color: #333;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
         }
 
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Header */
         header {
-            background: #2c3e50;
-            color: #fff;
-            padding: 20px 0;
+            background: #1d1f2e;
+            color: white;
+            padding: 40px 20px;
             text-align: center;
         }
 
         header h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 36px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 50px;
+            font-weight: 600;
         }
 
         header p {
             font-size: 18px;
+            font-weight: 300;
+            margin-top: 10px;
         }
 
+        /* Navigation */
         nav {
-            background: #34495e;
-            overflow: hidden;
-            text-align: center;
+            background-color: #333;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
-        nav a {
-            display: inline-block;
-            padding: 14px 20px;
-            color: white;
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            padding: 15px 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
             text-decoration: none;
+            color: white;
             text-transform: uppercase;
-            font-weight: 700;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
         }
 
-        nav a:hover {
-            background-color: #1abc9c;
+        nav ul li a:hover {
+            color: #1abc9c;
         }
 
+        /* Section Styles */
         section {
-            padding: 60px 20px;
+            padding: 80px 20px;
             max-width: 1200px;
-            margin: 0 auto;
+            margin: auto;
         }
 
         section h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 30px;
             text-align: center;
-            font-size: 30px;
-            margin-bottom: 20px;
-            font-family: 'Playfair Display', serif;
         }
 
-        .row {
-            display: flex;
-            flex-wrap: wrap;
+        /* About Me Section */
+        #about {
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+
+        #about p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        /* Projects Section */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
         }
 
-        .card {
+        .project-card {
             background-color: white;
+            padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            flex: 1;
-            min-width: 280px;
-            max-width: 350px;
-            transition: all 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .card:hover {
-            transform: translateY(-5px);
+        .project-card:hover {
+            transform: translateY(-10px);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
+        .project-card h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .project-card a {
+            color: #1abc9c;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        /* Skills Section */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .skill {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1 1 250px;
+            text-align: center;
+        }
+
+        .skill h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .skill p {
+            font-size: 16px;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #1d1f2e;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        #contact p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        #contact a {
+            color: #1abc9c;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Footer */
         footer {
-            background: #2c3e50;
+            background-color: #333;
             color: white;
             padding: 20px;
             text-align: center;
+        }
+
+        footer p {
+            font-size: 16px;
         }
 
         footer a {
             color: #1abc9c;
             text-decoration: none;
+            font-weight: 600;
         }
 
+        /* Media Queries for Responsive Design */
         @media (max-width: 768px) {
-            .row {
+            nav ul {
                 flex-direction: column;
-                align-items: center;
-            }
-
-            nav {
-                text-align: center;
-            }
-
-            nav a {
-                display: block;
-                padding: 10px;
             }
         }
+
     </style>
 </head>
+
 <body>
 
     <!-- Header Section -->
     <header>
         <h1>Your Name</h1>
-        <p>Data Analysis Portfolio</p>
+        <p>Data Science | Machine Learning | Data Visualization</p>
     </header>
 
     <!-- Navigation Menu -->
     <nav>
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
     <!-- About Me Section -->
     <section id="about">
         <h2>About Me</h2>
         <p>
-            Hello! I'm [Your Name], a passionate data analyst with experience in extracting valuable insights from data to help businesses make data-driven decisions. My expertise lies in data visualization, statistical analysis, and machine learning techniques.
+            I am a data scientist passionate about solving real-world problems using data. With experience in machine learning, data visualization, and statistical analysis, I thrive on turning data into actionable insights. My goal is to help businesses leverage their data for smarter decisions and greater success.
         </p>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
-        <div class="row">
-            <div class="card">
-                <h3>Project Title 1</h3>
-                <p>Short description of the project. Technologies used: Python, Pandas, Matplotlib.</p>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Analysis of retail data to identify customer trends. Tools used: Python, Pandas, Seaborn.</p>
                 <a href="#">View Project</a>
             </div>
-            <div class="card">
-                <h3>Project Title 2</h3>
-                <p>Short description of the project. Technologies used: SQL, Tableau, Machine Learning.</p>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Predictive modeling for stock prices using machine learning algorithms.</p>
                 <a href="#">View Project</a>
             </div>
-            <!-- Add more project cards here -->
+            <!-- More Projects -->
         </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills">
         <h2>Skills</h2>
-        <div class="row">
-            <div class="card">
-                <h3>Data Analysis</h3>
-                <p>Proficient in analyzing large datasets, statistical modeling, and creating insightful visualizations.</p>
-            </div>
-            <div class="card">
+        <div class="skills">
+            <div class="skill">
                 <h3>Python</h3>
-                <p>Skilled in using Python for data analysis, automation, and machine learning.</p>
+                <p>Data analysis, machine learning, and automation with Python.</p>
             </div>
-            <div class="card">
+            <div class="skill">
                 <h3>SQL</h3>
-                <p>Experienced in writing complex queries and working with relational databases.</p>
+                <p>Database management and complex queries with SQL.</p>
             </div>
-            <!-- Add more skills cards here -->
+            <div class="skill">
+                <h3>Tableau</h3>
+                <p>Data visualization and dashboard creation with Tableau.</p>
+            </div>
+            <!-- More Skills -->
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>If you'd like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
+        <p>If you want to collaborate or have any questions, feel free to get in touch!</p>
         <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
         <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
     </section>
@@ -202,4 +311,5 @@
     </footer>
 
 </body>
+
 </html>
