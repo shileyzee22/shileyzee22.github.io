@@ -117,24 +117,20 @@
             line-height: 1.8;
         }
 
-       <!-- PROJECTS SECTION -->
+      <!-- PROJECTS SECTION --> 
 <section id="projects" class="section">
     <div class="container">
         <h2>My Projects</h2>
         <div class="projects-grid">
 
-            <!--💡UPDATE: Replace this with your own project. Add as many as you like!-->
             <!-- Project 1 -->
-             <div class="project-card">
-                <!--💡UPDATE: Add a preview image of your project to assets/images/ -->
+            <div class="project-card">
                 <img src="assets/images/project-placeholder-1.jpg" alt="Project One Preview">
                 <div class="project-card-content">
                     <h3>Project Title One</h3>
                     <p>A brief, one or two-sentence description of your project, what it does, and the tools you used.</p>
                     <div class="project-buttons">
-                        <!--💡UPDATE: Add link to your project's code/documentation on GitHub-->
                         <a href="[YOUR_GITHUB_PROJECT_URL]" target="_blank" class="btn">Documentation</a>
-                        <!--💡UPDATE: Add link to your live dashboard (e.g., Power BI, Tableau Public)-->
                         <a href="[YOUR_LIVE_DASHBOARD_URL]" target="_blank" class="btn btn-secondary">View Dashboard</a>
                     </div>
                 </div>
@@ -182,6 +178,96 @@
         </div>
     </div>
 </section>
+
+<!-- Stylesheet -->
+<style>
+    .section {
+        padding: 60px 20px;
+        background-color: #f4f4f9;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 40px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 30px;
+    }
+
+    .project-card {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .project-card-content {
+        padding: 20px;
+    }
+
+    .project-card h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .project-card p {
+        font-size: 16px;
+        color: #777;
+        margin-bottom: 20px;
+    }
+
+    .project-buttons {
+        display: flex;
+        gap: 15px;
+    }
+
+    .project-buttons .btn {
+        background-color: #1abc9c;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+    }
+
+    .project-buttons .btn:hover {
+        background-color: #16a085;
+    }
+
+    .project-buttons .btn-secondary {
+        background-color: #34495e;
+    }
+
+    .project-buttons .btn-secondary:hover {
+        background-color: #2c3e50;
+    }
+
+    @media (max-width: 768px) {
+        .project-card img {
+            height: 150px;
+        }
+    }
+</style>
 
         /* Skills Section */
         .skills {
