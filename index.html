@@ -117,43 +117,71 @@
             line-height: 1.8;
         }
 
-        /* Projects Section */
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-        }
+       <!-- PROJECTS SECTION -->
+<section id="projects" class="section">
+    <div class="container">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
 
-        .project-card {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+            <!--💡UPDATE: Replace this with your own project. Add as many as you like!-->
+            <!-- Project 1 -->
+             <div class="project-card">
+                <!--💡UPDATE: Add a preview image of your project to assets/images/ -->
+                <img src="assets/images/project-placeholder-1.jpg" alt="Project One Preview">
+                <div class="project-card-content">
+                    <h3>Project Title One</h3>
+                    <p>A brief, one or two-sentence description of your project, what it does, and the tools you used.</p>
+                    <div class="project-buttons">
+                        <!--💡UPDATE: Add link to your project's code/documentation on GitHub-->
+                        <a href="[YOUR_GITHUB_PROJECT_URL]" target="_blank" class="btn">Documentation</a>
+                        <!--💡UPDATE: Add link to your live dashboard (e.g., Power BI, Tableau Public)-->
+                        <a href="[YOUR_LIVE_DASHBOARD_URL]" target="_blank" class="btn btn-secondary">View Dashboard</a>
+                    </div>
+                </div>
+            </div>
 
-        .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="assets/images/project-placeholder-2.jpg" alt="Project Two Preview">
+                <div class="project-card-content">
+                    <h3>Project Title Two</h3>
+                    <p>A brief, one or two-sentence description of your project, what it does, and the tools you used.</p>
+                    <div class="project-buttons">
+                        <a href="[YOUR_GITHUB_PROJECT_URL]" target="_blank" class="btn">Documentation</a>
+                        <a href="[YOUR_LIVE_DASHBOARD_URL]" target="_blank" class="btn btn-secondary">View Dashboard</a>
+                    </div>
+                </div>
+            </div>
 
-        .project-card h3 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
+            <!-- Project 3 -->
+            <div class="project-card">
+                <img src="assets/images/project-placeholder-3.jpg" alt="Project Three Preview">
+                <div class="project-card-content">
+                    <h3>Project Title Three</h3>
+                    <p>A brief, one or two-sentence description of your project, what it does, and the tools you used.</p>
+                    <div class="project-buttons">
+                        <a href="[YOUR_GITHUB_PROJECT_URL]" target="_blank" class="btn">Documentation</a>
+                        <a href="[YOUR_LIVE_DASHBOARD_URL]" target="_blank" class="btn btn-secondary">View Dashboard</a>
+                    </div>
+                </div>
+            </div>
 
-        .project-card p {
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
+            <!-- Project 4 -->
+            <div class="project-card">
+                <img src="assets/images/project-placeholder-4.jpg" alt="Project Four Preview">
+                <div class="project-card-content">
+                    <h3>Project Title Four</h3>
+                    <p>A brief, one or two-sentence description of your project, what it does, and the tools you used.</p>
+                    <div class="project-buttons">
+                        <a href="[YOUR_GITHUB_PROJECT_URL]" target="_blank" class="btn">Documentation</a>
+                        <a href="[YOUR_LIVE_DASHBOARD_URL]" target="_blank" class="btn btn-secondary">View Dashboard</a>
+                    </div>
+                </div>
+            </div>
 
-        .project-card a {
-            color: #1abc9c;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 16px;
-        }
+        </div>
+    </div>
+</section>
 
         /* Skills Section */
         .skills {
