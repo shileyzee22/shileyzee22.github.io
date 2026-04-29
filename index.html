@@ -92,7 +92,7 @@
         section {
             padding: 80px 20px;
             max-width: 1200px;
-            margin: auto;
+            margin: 0 auto;
         }
 
         section h2 {
@@ -117,159 +117,84 @@
             line-height: 1.8;
         }
 
-      <!-- PROJECTS SECTION --> 
-<section id="projects" class="section">
-    <div class="container">
-        <h2>My Projects</h2>
-        <div class="projects-grid">
-
-            <!-- Project 1 -->
-            <div class="project-card">
-                <img src="assets/images/project-placeholder-1.jpg" alt="Project One Preview">
-                <div class="project-card-content">
-                    <h3>Project Title One</h3>
-                    <p>A brief, one or two-sentence description of your project, what it does, and the tools you used.</p>
-                    <div class="project-buttons">
-                        <a href="[YOUR_GITHUB_PROJECT_URL]" target="_blank" class="btn">Documentation</a>
-                        <a href="[YOUR_LIVE_DASHBOARD_URL]" target="_blank" class="btn btn-secondary">View Dashboard</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="project-card">
-                <img src="assets/images/project-placeholder-2.jpg" alt="Project Two Preview">
-                <div class="project-card-content">
-                    <h3>Project Title Two</h3>
-                    <p>A brief, one or two-sentence description of your project, what it does, and the tools you used.</p>
-                    <div class="project-buttons">
-                        <a href="[YOUR_GITHUB_PROJECT_URL]" target="_blank" class="btn">Documentation</a>
-                        <a href="[YOUR_LIVE_DASHBOARD_URL]" target="_blank" class="btn btn-secondary">View Dashboard</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-card">
-                <img src="assets/images/project-placeholder-3.jpg" alt="Project Three Preview">
-                <div class="project-card-content">
-                    <h3>Project Title Three</h3>
-                    <p>A brief, one or two-sentence description of your project, what it does, and the tools you used.</p>
-                    <div class="project-buttons">
-                        <a href="[YOUR_GITHUB_PROJECT_URL]" target="_blank" class="btn">Documentation</a>
-                        <a href="[YOUR_LIVE_DASHBOARD_URL]" target="_blank" class="btn btn-secondary">View Dashboard</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="project-card">
-                <img src="assets/images/project-placeholder-4.jpg" alt="Project Four Preview">
-                <div class="project-card-content">
-                    <h3>Project Title Four</h3>
-                    <p>A brief, one or two-sentence description of your project, what it does, and the tools you used.</p>
-                    <div class="project-buttons">
-                        <a href="[YOUR_GITHUB_PROJECT_URL]" target="_blank" class="btn">Documentation</a>
-                        <a href="[YOUR_LIVE_DASHBOARD_URL]" target="_blank" class="btn btn-secondary">View Dashboard</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- Stylesheet -->
-<style>
-    .section {
-        padding: 60px 20px;
-        background-color: #f4f4f9;
-    }
-
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    h2 {
-        text-align: center;
-        font-size: 36px;
-        margin-bottom: 40px;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 600;
-    }
-
-    .projects-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        gap: 30px;
-    }
-
-    .project-card {
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
-    }
-
-    .project-card img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-    }
-
-    .project-card-content {
-        padding: 20px;
-    }
-
-    .project-card h3 {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-
-    .project-card p {
-        font-size: 16px;
-        color: #777;
-        margin-bottom: 20px;
-    }
-
-    .project-buttons {
-        display: flex;
-        gap: 15px;
-    }
-
-    .project-buttons .btn {
-        background-color: #1abc9c;
-        color: white;
-        padding: 12px 20px;
-        border-radius: 4px;
-        text-decoration: none;
-        font-weight: 600;
-        transition: background-color 0.3s ease;
-    }
-
-    .project-buttons .btn:hover {
-        background-color: #16a085;
-    }
-
-    .project-buttons .btn-secondary {
-        background-color: #34495e;
-    }
-
-    .project-buttons .btn-secondary:hover {
-        background-color: #2c3e50;
-    }
-
-    @media (max-width: 768px) {
-        .project-card img {
-            height: 150px;
+        /* Projects Section */
+        #projects {
+            padding: 60px 20px;
+            background-color: #f4f4f9;
         }
-    }
-</style>
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .project-card-content {
+            padding: 20px;
+        }
+
+        .project-card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 16px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .project-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+.project-buttons .btn {
+    background-color: #3498db; /* Blue color */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-buttons .btn:hover {
+    background-color: #2980b9; /* Darker blue */
+    transform: translateY(-3px);
+}
+
+.project-buttons .btn-secondary {
+    background-color: #2ecc71; /* Green color */
+}
+
+.project-buttons .btn-secondary:hover {
+    background-color: #27ae60; /* Darker green */
+    transform: translateY(-3px);
+}
+
 
         /* Skills Section */
+        #skills {
+            padding: 60px 20px;
+            background-color: #fff;
+        }
+
         .skills {
             display: flex;
             flex-wrap: wrap;
@@ -342,6 +267,10 @@
             nav ul {
                 flex-direction: column;
             }
+
+            .project-card img {
+                height: 150px;
+            }
         }
 
     </style>
@@ -365,56 +294,96 @@
         </ul>
     </nav>
 
-     <!-- About Me Section -->
+    <!-- About Me Section -->
     <section id="about">
         <h2>About Me</h2>
         <p>
-            Hello! I'm [Your Name], a passionate data analyst with experience in extracting valuable insights from data to help businesses make data-driven decisions. My expertise lies in data visualization, statistical analysis, and machine learning techniques.
+            I am a data scientist passionate about solving real-world problems using data. With experience in machine learning, data visualization, and statistical analysis, I thrive on turning data into actionable insights. My goal is to help businesses leverage their data for smarter decisions and greater success.
         </p>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="row">
-            <div class="card">
-                <h3>Project Title 1</h3>
-                <p>Short description of the project. Technologies used: Python, Pandas, Matplotlib.</p>
-                <a href="#">View Project</a>
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="assets/images/project-placeholder-1.jpg" alt="Project One Preview">
+                <div class="project-card-content">
+                    <h3>Project Title One</h3>
+                    <p>A brief, one or two-sentence description of your project, what it does, and the tools you used.</p>
+                    <div class="project-buttons">
+                        <a href="[YOUR_GITHUB_PROJECT_URL]" target="_blank" class="btn">Documentation</a>
+                        <a href="[YOUR_LIVE_DASHBOARD_URL]" target="_blank" class="btn btn-secondary">View Dashboard</a>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <h3>Project Title 2</h3>
-                <p>Short description of the project. Technologies used: SQL, Tableau, Machine Learning.</p>
-                <a href="#">View Project</a>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="assets/images/project-placeholder-2.jpg" alt="Project Two Preview">
+                <div class="project-card-content">
+                    <h3>Project Title Two</h3>
+                    <p>A brief, one or two-sentence description of your project, what it does, and the tools you used.</p>
+                    <div class="project-buttons">
+                        <a href="[YOUR_GITHUB_PROJECT_URL]" target="_blank" class="btn">Documentation</a>
+                        <a href="[YOUR_LIVE_DASHBOARD_URL]" target="_blank" class="btn btn-secondary">View Dashboard</a>
+                    </div>
+                </div>
             </div>
-            <!-- Add more project cards here -->
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <img src="assets/images/project-placeholder-3.jpg" alt="Project Three Preview">
+                <div class="project-card-content">
+                    <h3>Project Title Three</h3>
+                    <p>A brief, one or two-sentence description of your project, what it does, and the tools you used.</p>
+                    <div class="project-buttons">
+                        <a href="[YOUR_GITHUB_PROJECT_URL]" target="_blank" class="btn">Documentation</a>
+                        <a href="[YOUR_LIVE_DASHBOARD_URL]" target="_blank" class="btn btn-secondary">View Dashboard</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+                <img src="assets/images/project-placeholder-4.jpg" alt="Project Four Preview">
+                <div class="project-card-content">
+                    <h3>Project Title Four</h3>
+                    <p>A brief, one or two-sentence description of your project, what it does, and the tools you used.</p>
+                    <div class="project-buttons">
+                        <a href="[YOUR_GITHUB_PROJECT_URL]" target="_blank" class="btn">Documentation</a>
+                        <a href="[YOUR_LIVE_DASHBOARD_URL]" target="_blank" class="btn btn-secondary">View Dashboard</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills">
         <h2>Skills</h2>
-        <div class="row">
-            <div class="card">
-                <h3>Data Analysis</h3>
-                <p>Proficient in analyzing large datasets, statistical modeling, and creating insightful visualizations.</p>
-            </div>
-            <div class="card">
+        <div class="skills">
+            <div class="skill">
                 <h3>Python</h3>
-                <p>Skilled in using Python for data analysis, automation, and machine learning.</p>
+                <p>Data analysis, machine learning, and automation with Python.</p>
             </div>
-            <div class="card">
+            <div class="skill">
                 <h3>SQL</h3>
-                <p>Experienced in writing complex queries and working with relational databases.</p>
+                <p>Database management and complex queries with SQL.</p>
             </div>
-            <!-- Add more skills cards here -->
+            <div class="skill">
+                <h3>Tableau</h3>
+                <p>Data visualization and dashboard creation with Tableau.</p>
+            </div>
+            <!-- Add more skills here -->
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>If you'd like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
+        <p>If you want to collaborate or have any questions, feel free to get in touch!</p>
         <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
         <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
     </section>
@@ -425,5 +394,6 @@
     </footer>
 
 </body>
+
 </html>
-</html>
+
