@@ -1,7 +1,14 @@
-# [Farinde Olasile Lateefat] - Data Analysis Portfolio
-
-Welcome! This repository contains the complete template for a professional, one-page data analysis portfolio website, hosted for free on GitHub Pages.
-
+# Farinde Olasile Lateefat — Data Analysis Portfolio
+ 
+Welcome! This is my personal data analysis portfolio website, hosted on GitHub Pages. It showcases projects I have built using real and simulated datasets, applying tools across the full data analysis workflow — from cleaning and transformation to visualisation and storytelling.
+ 
+---
+ 
+## 🙋 About Me
+ 
+I am a data analyst with a focus on turning raw data into clear, actionable insights. My work spans exploratory analysis, dashboard design, and data transformation, with a particular interest in projects that have real-world impact — from water access infrastructure to inventory management.
+ 
+---
 ## About This Portfolio Template
 
 This portfolio is designed to demonstrate skills in:
@@ -11,51 +18,63 @@ This portfolio is designed to demonstrate skills in:
 - Transforming complex data into actionable insights
 
 ## 🚀 Projects
-
-This template is set up to showcase your best work. You can easily customize the project cards in the `index.html` file.
-
-### Project Title One
-*A brief description of your project, the tools used, and the key insights derived.*
-
-### Project Title Two
-*A brief description of your project, the tools used, and the key insights derived.*
-
-### Project Title Three
-*A brief description of your project, the tools used, and the key insights derived.*
+ 
+### 1. Maji Ndogo Water Access Dashboard
+*Power BI · DAX · Power Query*
+ 
+Analysed water access across 27.6M people in five provinces of Maji Ndogo to identify infrastructure gaps, quantify improvement costs, and deliver a decision-ready Power BI report for national and provincial leadership. The dashboard includes a national overview page and five provincial drill-through pages, revealing that only 34% of the population currently has basic water access and that a $147M investment across 25,398 improvements is needed to reach 100%.
+ 
+- 🔗 [Documentation](https://github.com/shileyzee22/Maji-Ndogo/blob/main/README.md)
+---
+ 
+### 2. Maji Ndogo Water Access Data Transformation
+*Power BI · DAX · Power Query*
+ 
+Built on the same national water survey dataset, this project focuses on transforming raw water access data to support infrastructure monitoring, cost tracking, and evidence-based decision-making. By integrating population, infrastructure, and usage data, the project produced actionable insights into the water access crisis to support future planning.
+ 
+- 🔗 [Documentation](https://github.com/shileyzee22/-change-in-Maji-Ndogo/blob/3a302e2b6dcf7f5032f6bcbc8e6a2cc9a32833b6/README.md)
+---
+ 
+### 3. Car Inventory Analysis
+*Python · pandas · NumPy · Matplotlib · Seaborn*
+ 
+Explored pricing trends, mileage impact, brand popularity, and profit margins in a used car dataset. After cleaning and preprocessing the data in a Jupyter Notebook, the analysis revealed that most cars fall in the $2k–$4k range, Toyota, Ford, and Chevrolet are the most common brands, and Ford and Chevrolet carry the highest average profit margins. Findings were translated into concrete recommendations for inventory planning, procurement, and pricing strategy.
+ 
+- 🔗 [Documentation](https://github.com/shileyzee22/CAR_INVENTORY-PYTHON-PROJECT/blob/main/README.md)
+- 📓 [View Notebook](https://github.com/shileyzee22/CAR_INVENTORY-PYTHON-PROJECT)
 
 
 ## 🛠️ Skills
-
-Update the `index.html` file to reflect your personal technical skillset. The template is organized into key categories:
-
-- **Data Visualization**: Power BI, Tableau, Matplotlib, etc.
-- **Data Analysis**: SQL, Python (Pandas), R, Excel, etc.
-- **Data Modeling**: Power Query, DAX, Star Schema Design, etc.
-- **Tools**: List any other relevant tools like Power BI Service, specific cloud platforms, etc.
-
-## 💡 How to Use This Template
-
-Creating your own portfolio from this template is a simple, four-step process.
-
-### 1. Create a New Repository from this Template
-Click the green **"Use this template"** button at the top of this repository page, then select **"Create a new repository"**.
-
-### 2. Name Your Repository for GitHub Pages
-This is the most important step. To turn your portfolio into a live website, you **must** name your new repository in the following format:
-`your-username.github.io`
-*(Replace `your-username` with your actual GitHub username.)*
-
-### 3. Customize Your Portfolio
-Open the `index.html` file and begin personalizing it. The file contains helpful `<!--💡UPDATE: ... -->` comments to guide you on where to change:
-- Your name and title
-- Social media links
-- The "About Me" section
-- Your project titles, descriptions, and links
-- Your list of skills
-
-### 4. Add Your Files
-- Upload your profile photo and project preview images to the `assets/images/` folder.
-- Upload your CV (e.g., in PDF format) to the `assets/` folder.
-- Create your favicon and add it to the root folder.
-
-Once you commit your changes, your new portfolio website will be live at `https://your-username.github.io` within a few minutes!
+ 
+| Category | Tools |
+|----------|-------|
+| Data Visualisation | Power BI, Matplotlib, Seaborn |
+| Data Analysis | Python (pandas, NumPy), Excel |
+| Data Modelling | Power Query, DAX, Star Schema Design |
+| Other Tools | Jupyter Notebook, GitHub, Markdown |
+ 
+---
+ 
+## 📁 Repository Structure
+ 
+```
+shileyzee22.github.io/
+│
+├── index.html              # Main portfolio page
+├── assets/
+│   ├── images/             # Profile photo and project preview images
+│   └── cv.pdf              # Downloadable CV
+└── README.md               # This file
+```
+ 
+---
+## 📬 Contact
+ 
+Feel free to connect with me or explore my work:
+ 
+- 🔗 [LinkedIn](https://www.linkedin.com/in/olasile/])
+- 💼 [GitHub](https://github.com/shileyzee22)
+- 📧 [Email — olasileopeyemi3079@GMAIL.COM]
+---
+ 
+*Portfolio last updated: May 2026*
