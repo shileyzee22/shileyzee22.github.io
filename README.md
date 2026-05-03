@@ -74,7 +74,7 @@ Feel free to connect with me or explore my work:
  
 - 🔗 [LinkedIn](https://www.linkedin.com/in/olasile/])
 - 💼 [GitHub](https://github.com/shileyzee22)
-- 📧 [Email — olasileopeyemi3079@GMAIL.COM]
+- 📧 [Email — olasileopeyemi3079@gmail.com]
 ---
  
 *Portfolio last updated: May 2026*
